@@ -1,0 +1,2 @@
+L'executable de jupyter-lab se trouve:
+/usr/local/python/3.12.1/bin
