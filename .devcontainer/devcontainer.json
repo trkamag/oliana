@@ -17,7 +17,11 @@
 		//"ghcr.io/devcontainers-extra/features/aws-cdk:2": {},
 		//"ghcr.io/devcontainers-extra/features/aws-eb-cli:1": {}
 	},
-
+    
+	// Mount local folders 
+	"mounts": [
+  		"source=H:/temp,target=/mnt/H_from_local,type=bind,consistency=cached"
+	],
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
