@@ -16,7 +16,7 @@
 		//"ghcr.io/devcontainers-extra/features/amplify-cli:2": {},
 		//"ghcr.io/devcontainers-extra/features/aws-cdk:2": {},
 		//"ghcr.io/devcontainers-extra/features/aws-eb-cli:1": {}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -31,5 +31,6 @@
 	// "customizations": {},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+	"remoteUser": "oliana",
+	"containerUser": "oliana"
 }
