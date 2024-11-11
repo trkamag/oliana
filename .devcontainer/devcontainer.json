@@ -47,7 +47,14 @@
 				"NecatiARSLAN.aws-s3-vscode-extension",
 				"amazonwebservices.amazon-q-vscode",
 				"AmazonEMR.emr-tools",
-				"AmazonWebServices-AISolutionsArchitecture.bedrock-vscode-playground"
+				"AmazonWebServices-AISolutionsArchitecture.bedrock-vscode-playground",
+				"hashicorp.terraform",
+				"4ops.terraform",
+				"ms-kubernetes-tools.vscode-kubernetes-tools",
+				"ms-toolsai.datawrangler"
+
+
+
 
             ],
             "vscode": {
