@@ -10,8 +10,8 @@ RUN apt-get update && \
 
 CMD ["cat", "/etc/os-release"]
 
-ENV USER_NAME alitari
-ENV USER_PASSWORD password
+ENV USER_NAME oliana
+ENV USER_PASSWORD nd7rg5
 
 # add a user (--disabled-password: the user won't be able to use the account until the password is set)
 RUN adduser --quiet --disabled-password --shell /bin/zsh --home /home/$USER_NAME --gecos "User" $USER_NAME
