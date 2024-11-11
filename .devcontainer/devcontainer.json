@@ -29,8 +29,47 @@
 
 	// Configure tool-specific properties.
 	// "customizations": {},
+	"customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.black-formatter",
+				"ms-python.vscode-pylance",
+				"ms-python.isort",
+				"ms-python.autopep8",
+				"ms-azuretools.vscode-docker",
+				"gitpod.gitpod-desktop",
+				"mhutchie.git-graph",
+				"ms-toolsai.jupyter",
+				"amazonwebservices.aws-toolkit-vscode",
+				"mark-tucker.aws-cli-configure",
+				"Boto3typed.boto3-ide",
+				"NecatiARSLAN.aws-s3-vscode-extension",
+				"amazonwebservices.amazon-q-vscode",
+				"AmazonEMR.emr-tools",
+				"AmazonWebServices-AISolutionsArchitecture.bedrock-vscode-playground"
+
+            ],
+            "vscode": {
+                "settings": {
+                    "[python]": {
+                        "editor.defaultFormatter": "ms-python.vscode-pylance",
+                        "editor.codeActionsOnSave": {
+                            "source.fixAll": "explicit",
+                            "source.organizeImports": "explicit"
+                        }
+                    },
+                    "python.analysis.fixAll": [
+                        "source.unusedImports"
+                    ],
+                    "editor.formatOnSave": true
+                }
+            }
+        }
+    },
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// https://www.youtube.com/watch?time_continue=60&v=PSBeVOw7cKQ&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=MzY4NDIsMzY4NDIsMjg2NjY
 	"remoteUser": "oliana",
 	"containerUser": "oliana"
 }
