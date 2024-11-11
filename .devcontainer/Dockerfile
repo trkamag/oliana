@@ -8,8 +8,8 @@ RUN apt-get update && \
     pip install --no-cache-dir --upgrade pip && \
     pip install -r requirements.txt
 
-ARG USERNAME=user-name-goes-here
-ARG USER_UID=1000
+ARG USERNAME=oliana
+ARG USER_UID=1001
 ARG USER_GID=$USER_UID
 
 # Create the user
