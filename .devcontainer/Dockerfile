@@ -22,9 +22,10 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-# ********************************************************
-# * Anything else you want to do like clean up goes here *
-# ********************************************************
+# Add information to avoid failure of vscode docker extension
+RUN sudo groupadd docker \
+    && sudo usermod -aG docker $USER
+
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
