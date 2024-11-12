@@ -28,6 +28,6 @@ USER $USERNAME
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
 
 # Add information to avoid failure of vscode docker extension
-RUN sudo chmod 666 /var/run/docker.sock
+RUN chmod 666 /var/run/docker.sock
 
 CMD ["zsh"]
