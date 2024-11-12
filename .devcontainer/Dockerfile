@@ -22,15 +22,12 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-
-# Add information to avoid failure of vscode docker extension
-#RUN groupadd docker \
-#    && usermod -aG docker $USER
-RUN sudo chmod 666 /var/run/docker.sock
-
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
 
 RUN wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
+
+# Add information to avoid failure of vscode docker extension
+RUN sudo chmod 666 /var/run/docker.sock
 
 CMD ["zsh"]
