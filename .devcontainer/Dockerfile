@@ -22,11 +22,11 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
-RUN sudo chmod 666 /var/run/docker.sock
+
 # Add information to avoid failure of vscode docker extension
 #RUN groupadd docker \
 #    && usermod -aG docker $USER
-
+RUN sudo chmod 666 /var/run/docker.sock
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
 USER $USERNAME
