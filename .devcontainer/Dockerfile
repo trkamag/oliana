@@ -12,10 +12,6 @@ ARG USERNAME=oliana
 ARG USER_UID=1001
 ARG USER_GID=$USER_UID
 
-ARG USERNAME=docker
-ARG USER_UID=1002
-ARG USER_GID=$USER_UID
-
 # Create the user
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
