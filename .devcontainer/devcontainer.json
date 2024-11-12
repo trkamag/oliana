@@ -20,7 +20,7 @@
     
 	// Mount local folders 
 	"mounts": [
-  		"source=H:/temp,target=/mnt/H_from_local,type=bind,consistency=cached"
+  		"source=H:/temp,target=/mnt/H_from_locall,type=bind,consistency=cached"
 	],
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -55,7 +55,8 @@
 				"hashicorp.terraform",
 				"4ops.terraform",
 				"ms-kubernetes-tools.vscode-kubernetes-tools",
-				"ms-toolsai.datawrangler"
+				"ms-toolsai.datawrangler",
+				"ms-vscode.remote-explorer"
 
 
 
