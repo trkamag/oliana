@@ -23,8 +23,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
 # Add information to avoid failure of vscode docker extension
-RUN sudo groupadd docker \
-    && sudo usermod -aG docker $USER
+RUN groupadd docker \
+    && usermod -aG docker $USER
 
 
 # [Optional] Set the default user. Omit if you want to keep the default as root.
